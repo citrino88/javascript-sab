@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 02</title>
     <style>
-        body{
+        body {
             background-color: black;
-            color:white;
+            color: white;
         }
     </style>
 </head>
+
 <body>
     <h2>Variáveis e operadores</h2>
 
@@ -27,8 +29,54 @@
 
         console.log(2e7); // 2 x 10^7 , expoente
 
-        
-        
+        if (idade >= 18) {
+            alert("Bem-vindo \n " + nome + "!"); // \n é pra pular linha
+        } else {
+            alert("Desculpa mas você não tem idade para acessar essa página");
+        }
+
+        var ingresso = 5;
+
+        while (ingresso > 0) {
+
+            document.write("Ingresso validado, tenha um bom filme! <br>");
+
+            ingresso = ingresso - 1;
+
+        }
+
+        document.write("Todos os ingressos foram validados");
+
+        console.log(3 > 4 ? "é sim" : "é falso, o primeiro é menor");
+
+        var name; // varios locais, global, fora no bloco
+        let sobrenome; // local, dentro de um bloco
+        const age = 28; // não vai mudar o valor
+
+        name = "Leticia";
+        sobrenome = "Araujo";
+        // não dá pra colocar exemplo age = 28; pois é uma constante, tem que declarar lá em cima, const blablabla = 28; ....
+        console.log("Olá " + name + " " + sobrenome + " seja bem-vindo!");
+
+        /* Funções */
+
+        function olaFuncao() {
+
+            console.log("Dessa maneira criamos uma função");
+            // document.write("Uma função Javascript é um bloco de código designado para executar determinada tarefa");
+
+        };
+        console.log(olaFuncao);
+
+        // alert é um tipo de função
+        confirm("Tudo certo?"); // tem um ok e um cancelar.
+        prompt("Tudo certo?");
+
+        var onome = prompt("Escreva seu nome:: "); //captura o nome que o usuario escreve
+        var osobrenome = prompt("Escreva seu sobrenome:: ");
+        alert('Boa tarde ' + onome + ' ' + osobrenome);
+
     </script>
 </body>
+
 </html>
