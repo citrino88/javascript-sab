@@ -40,21 +40,26 @@ while(contador <= 10){
     contador++;//contator mais 1
 } */
 
-/* var compra = 125.50;
+var compra = 125.50;
 var parcelas = 10;
-var juros = 0.5;
+var juros = 0.05;
 var contador = 1;
-var valorAtual = compra / parcelas; 
+var valorAtual = compra; 
 
 
  while(contador <= parcelas){
 
-    valorAtual = (juros*valorAtual)+valorAtual;
+    valorAtual += juros*valorAtual;
 
     console.log(`Parcela ${contador}: ${valorAtual.toFixed(2)}`);
 
     contador++;
-} */
+}
+
+for (let i = 1; i <= parcelas; i++) {
+    valorAtual += valorAtual * juros; // Acrescenta os juros ao valor atual
+    console.log(`Parcela ${i}: R$ ${valorAtual.toFixed(2)}`);
+}
 
 /*     
 do{
