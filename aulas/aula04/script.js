@@ -40,21 +40,21 @@ while(contador <= 10){
     contador++;//contator mais 1
 } */
 
-var compra = 125.50;
+/* var compra = 125.50;
 var parcelas = 10;
 var juros = 0.5;
 var contador = 1;
-var valorAtual; 
+var valorAtual = compra / parcelas; 
 
 
  while(contador <= parcelas){
 
     valorAtual = (juros*valorAtual)+valorAtual;
 
-    console.log(`Parcela ${contador}: ${valorAtual}.toFixed(2)`);
+    console.log(`Parcela ${contador}: ${valorAtual.toFixed(2)}`);
 
     contador++;
-}
+} */
 
 /*     
 do{
@@ -70,6 +70,13 @@ var resposta =prompt("Você quer continuar?:: ");
 while(resposta =='sim');
  */
 
+
+/* var valor=2;
+for(let i=0;i<=10;i++){
+    console.log(i*valor);
+} */
+
+/* 
 function verificarSigno() {
     let mesNascimento = document.getElementById('mesNascimento').value.toLowerCase();
     let mesesValidos = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
@@ -118,3 +125,25 @@ function verificarSigno() {
         alert('Mês de nascimento inválido. Por favor, digite um mês válido.');
     }
 };
+ */
+
+var palavra = `Doce de leite`;
+//indices: 012345678
+
+console.log(palavra.charAt(3)); //o charAt tira o valor que esta na posição indice 3, com isso podemos pegar este valor e armazenar em alguma variavel e poder usar depois.
+
+console.log(palavra.length);//quantas letras tem a palavra por exemplo
+
+console.log(palavra.indexOf(`e`));//retorna o indice que esta a letra e, por exemplo.
+
+console.log(palavra.toUpperCase());
+console.log(palavra.toLowerCase());
+
+console.log(palavra.substring(0,3));// este corta a palavra ou numero
+
+for (let i = 0; i < palavra.length; i++) {
+   console.log(palavra[i]);    
+}
+
+console.log(palavra);
+console.log(palavra.replace(`Doce`,`Chocolate`));
