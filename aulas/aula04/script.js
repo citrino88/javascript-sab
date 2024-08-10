@@ -127,6 +127,7 @@ function verificarSigno() {
 };
  */
 
+/* ************************************************
 var palavra = `Doce de leite`;
 //indices: 012345678
 
@@ -147,3 +148,16 @@ for (let i = 0; i < palavra.length; i++) {
 
 console.log(palavra);
 console.log(palavra.replace(`Doce`,`Chocolate`));
+
+******************************************* */
+
+var senha = `Senha123`;
+
+const regexMaiusculas = /[a-z]/gim;
+console.log(senha.search(regexMaiusculas));
+
+//Tenha letras na senha:
+
+if (senha.search(regexMaiusculas) != -1) {
+    console.log('Senha válida');
+}
