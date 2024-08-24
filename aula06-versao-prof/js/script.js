@@ -16,7 +16,7 @@ for (const i of tituloPrincipal) {
 
 
 //-----------------------------------------------------
-
+/* 
 const divDOM= document.querySelectorAll('div.content');
 
 
@@ -31,6 +31,31 @@ tituloPrincipal.textContent = 'teste <a href=""> ola </a>';
 tituloPrincipal.innerHTML = 'teste <a href=""> ola </a>';
 
 // -- Manipulação CSSOM no CSS
-divDOM[0].style.backgroundColor = 'grey';
+divDOM[0].style.backgroundColor = 'grey'; */
 
 //-----------------------------------------------------
+
+/* ------------------------------------------------
+    TABUADA
+ */
+
+function tabuada() {
+    const valor = document.querySelector('#tabuada').value;
+    //alert('funcionou');
+
+    const divResposta = document.querySelector('#respostaTabuada');
+
+    divResposta.innerHTML = ''; //limpeza, para não haver acumulo de resultados um abaixo do outro
+
+    if (valor != '') {
+
+        for (let i = 1; i <= 10; i++) {
+
+            divResposta.innerHTML += `${valor} x ${i} = ${valor * i} <br>`;
+        }
+    }else{
+        divResposta.textContent = "Insira um valor!";
+    }
+}
+
+
