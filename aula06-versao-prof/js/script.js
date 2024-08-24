@@ -58,4 +58,20 @@ function tabuada() {
     }
 }
 
+/* ------------------------------------------------
+    ALTERAR CORES
+ */
 
+function alterarCor() {
+
+    // lembrar não esquecer do value, para capturarmos o valor da cor que o usuario quer
+    const cor = document.querySelector('#cor').value;
+    const body = document.querySelector('body');
+
+    body.style.backgroundColor = `${cor}`;
+
+    const bloco = document.querySelector('#bloco').value;
+    const blocoCor = document.querySelector('#blocoCor');
+    blocoCor.style.backgroundColor = `${cor}`;
+    
+}
