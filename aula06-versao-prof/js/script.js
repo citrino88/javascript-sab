@@ -33,6 +33,17 @@ tituloPrincipal.innerHTML = 'teste <a href=""> ola </a>';
 // -- Manipulação CSSOM no CSS
 divDOM[0].style.backgroundColor = 'grey'; */
 
+/*
+// Rastrear o elemento HTML e guardar o caminho até ele
+const tituloPrincipal = document.querySelector('#tituloPrincipal');
+
+//manipula o DOM por sua propriedades
+var texto = prompt('Digite um texto:: ');
+tituloPrincipal.innerHTML = `${texto}`;
+var cor = prompt('Digite uma cor em inglês:: ');
+tituloPrincipal.style.color = `${cor}`;
+*/
+
 //-----------------------------------------------------
 
 /* ------------------------------------------------
@@ -75,3 +86,20 @@ function alterarCor() {
     blocoCor.style.backgroundColor = `${cor}`;
     
 }
+
+/* ------------------------------------------------
+    MUDAR TEMA
+ */
+
+function mudarTema(){
+
+    const tema = document.querySelector('#tema').value;
+    const body = document.querySelector('body');
+
+    body.style.backgroundColor = 'Black';
+}
+
+
+const botao = document.querySelector('#botao');//acionador do evento
+
+botao.addEventListener('click', mudarTema);//colocamos no botao, a ação quando ele for clicado
