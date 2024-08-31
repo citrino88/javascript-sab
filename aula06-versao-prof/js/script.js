@@ -95,8 +95,18 @@ function mudarTema(){
 
     const tema = document.querySelector('#tema').value;
     const body = document.querySelector('body');
+    //body.style.backgroundColor = 'Black';
 
-    body.style.backgroundColor = 'Black';
+    const container = document.querySelectorAll('.container');
+
+    //container[0].style.backgroundColor = 'red'; obs. modifiquei apenas a cor de fundo do primeiro container do array
+
+    if (tema == 'Claro') {
+        //alert('entrou') teste para ver se esta funcionando
+        body.style.backgroundColor = 'blue';
+    } else {
+        
+    } 
 }
 
 
