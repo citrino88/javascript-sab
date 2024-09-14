@@ -109,7 +109,20 @@ function mudarTema(){
     } 
 }
 
-
+/*
 const botao = document.querySelector('#botao');//acionador do evento
 
 botao.addEventListener('click', mudarTema);//colocamos no botao, a ação quando ele for clicado
+*/
+
+/* ------------------------------------------------
+    MUDAR IMAGEM GATO
+ */
+
+function mudarImagem() {
+    alert('teste');
+    
+}
+const botao = document.querySelector('#botaoGato');//acionador do evento
+
+botao.addEventListener('click', mudarTema);
