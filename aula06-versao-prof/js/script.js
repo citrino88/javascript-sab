@@ -69,31 +69,80 @@ function tabuada() {
     }
 }
 
-const botaoalerta = {
+const botaoo = {
     alertar: document.querySelector('#botaoAlerta'),
+    alertarsoma: document.querySelector('#botaoSoma'),
+    alterarCor: document.querySelector('#alterarCor'),
+    umClick: document.querySelector('#umClick'),
+    doisClick: document.querySelector('#doisClick'),
+    gatoDesaparecer: document.querySelector('#botaoDesaparecer')
 }
 
-function alertarFuncao() {
-    alert('Funcionouuuuu')
+const estrutura = {
+    body: document.querySelector('body'),
+    divArea: document.querySelector('#area'),
+    gato: document.querySelector('#gato')
 }
 
-botaoalerta.alertar.addEventListener('click', alertarFuncao)
+const formulario = {
+    inputCor: document.querySelector('#cor'),
+}
+
+function mudancaCor() {
+     
+    estrutura.body.style.backgroundColor = formulario.inputCor.value;
+}
+
+botaoo.alterarCor.addEventListener('click', mudancaCor())
+
+//eventos
+botaoo.umClick.addEventListener('click', ()=> estrutura.divArea.style.display = 'none')
+botaoo.doisClick.addEventListener('dblclick', ()=> {
+    estrutura.divArea.style.display = 'block'
+    estrutura.gato.style.opacity = '1'
+})
+
+//gato desaparecer
+// botaoo.gatoDesaparecer.addEventListener('click', ()=> estrutura.gato.style.opacity = '0')
+botaoo.gatoDesaparecer.addEventListener('click', ()=> estrutura.gato.classList.toggle('fechado'))
+
+
+
+
+
+botaoo.alertar.addEventListener('click', ()=> alert('Funcionouuuuu'))
+
+/* ------------------------------------------------
+    SOMA
+ */
+
+botaoo.alertarsoma.addEventListener('click', ()=> alert('Somando'))
+
+function soma() {
+    const valorA = document.querySelector('#valorA').value
+    const valorB = document.querySelector('#valorB').value
+    const respostaSoma = document.querySelector('#respostaSoma')
+
+    respostaSoma.innerHTML = valorA + valorB
+}
 
 /* ------------------------------------------------
     ALTERAR CORES
  */
 
+
+
 function alterarCor() {
 
     // lembrar não esquecer do value, para capturarmos o valor da cor que o usuario quer
-    const cor = document.querySelector('#cor').value;
-    const body = document.querySelector('body');
+    // const cor = document.querySelector('#cor').value;
+    // const body = document.querySelector('body');
 
-    body.style.backgroundColor = `${cor}`;
+    // body.style.backgroundColor = `${cor}`;
 
-    const bloco = document.querySelector('#bloco').value;
-    const blocoCor = document.querySelector('#blocoCor');
-    blocoCor.style.backgroundColor = `${cor}`;
+    // const bloco = document.querySelector('#bloco').value;
+    // const blocoCor = document.querySelector('#blocoCor');
+    // blocoCor.style.backgroundColor = `${cor}`;
     
 }
 
@@ -104,7 +153,7 @@ function alterarCor() {
 function mudarTema(){
 
     const tema = document.querySelector('#tema').value;
-    const body = document.querySelector('body');
+    // const body = document.querySelector('body');
     //body.style.backgroundColor = 'Black';
 
     const container = document.querySelectorAll('.container');

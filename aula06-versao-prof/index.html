@@ -63,6 +63,7 @@
                 </form>
 
                 <button onClick="soma()">Calcular</button>
+                <button id="botaoSoma">Teste Soma</button>
 
                 <div id="respostaSoma">
 
@@ -89,7 +90,8 @@
                 </form>
 
                 
-                <button onClick="alterarCor()">Alterar</button>    
+                <!-- <button onClick="alterarCor()">Alterar</button>     -->
+                <button id="alterarCor">Alterar</button>
 
             </div>
 
@@ -122,12 +124,29 @@
 
         </div> 
 
+        <!-- Mudar com cliques -->
+        <div class="container">
+            <div class="content">
+                <button id="umClick"> Um clique! </button>
+                <button id="doisClick"> Dois cliques! </button>
+            </div>
+        </div>
+
+        <!-- Mudar com entrada/saida do mouse -->
+        <div id="area" class="container">
+            <div id="areaRestrita" class="content">
+                <img src="midia/img/sirene.gif" width="100px" style="display: none">
+                <h1> Area restrita </h1>
+            </div>
+        </div>
+
         <!-- Mudar imagem -->
         <div class="container"> 
             
             <div class="content">
                
-               <img src="midia/img/img3.jpg" alt="gato com gravata"> 
+               <img  id="gato" src="midia/img/img3.jpg" alt="gato com gravata"> 
+               <button id="botaoDesaparecer">Desaparecer</button>
 
                <form> 
 
