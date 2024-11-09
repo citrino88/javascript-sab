@@ -69,6 +69,16 @@ function tabuada() {
     }
 }
 
+const botaoalerta = {
+    alertar: document.querySelector('#botaoAlerta'),
+}
+
+function alertarFuncao() {
+    alert('Funcionouuuuu')
+}
+
+botaoalerta.alertar.addEventListener('click', alertarFuncao)
+
 /* ------------------------------------------------
     ALTERAR CORES
  */
