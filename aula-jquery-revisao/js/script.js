@@ -1,3 +1,5 @@
+/* PARTE 1 - ACCORDION
+
 $(function(){
  
     //DOM para encontrar o elemento:
@@ -71,4 +73,73 @@ $(function(){
     })
  
  
-});
+}); 
+
+*/
+
+// Slider funcionando
+
+// $(function(){
+
+//     var carrosselItem = $('.carousel-item')
+
+//     /* exemplos 
+//     $(carrosselItem[0]).removeClass('active')
+//     $(carrosselItem[2]).addClass('active') */
+
+//     var btnSlider = {
+//         voltar: $('.carousel-control-prev'),
+//         proximo: $('.carousel-control-next')
+//     }
+
+//     var controlador = 0
+
+//     btnSlider.voltar.click(()=>{
+                
+//         if (controlador == 0) {
+
+//             $(carrosselItem[0]).removeClass('active')
+//             $(carrosselItem[2]).addClass('active')
+//             controlador = 2
+            
+//         } else if (controlador == 1) {
+
+//             $(carrosselItem[1]).removeClass('active')
+//             $(carrosselItem[0]).addClass('active')
+//             controlador = 0
+            
+//         } else {
+
+//             $(carrosselItem[2]).removeClass('active')
+//             $(carrosselItem[1]).addClass('active')
+//             controlador = 1
+            
+//         }
+
+//     })
+    
+//     btnSlider.proximo.click(()=>{
+        
+//         if (controlador == 0) {
+
+//             $(carrosselItem[0]).removeClass('active')
+//             $(carrosselItem[1]).addClass('active')
+//             controlador = 1
+            
+//         } else if (controlador == 1) {
+
+//             $(carrosselItem[1]).removeClass('active')
+//             $(carrosselItem[2]).addClass('active')
+//             controlador = 2
+            
+//         } else {
+
+//             $(carrosselItem[2]).removeClass('active')
+//             $(carrosselItem[0]).addClass('active')
+//             controlador = 0
+            
+//         }
+
+//     })
+
+// });
