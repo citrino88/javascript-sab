@@ -143,3 +143,26 @@ $(function(){
 //     })
 
 // });
+
+
+// Abrir e Fechar um modal
+
+$(function(){
+
+    var btnModal = {
+        abrir: $('#abrir'),
+        fechar: $('#fechar')
+    }
+
+    var card = $('.card')
+
+    btnModal.abrir.click(()=>{
+        btnModal.abrir.addClass('fechado')
+        card.removeClass('fechado')        
+    })
+
+    btnModal.fechar.click(()=>{
+        card.addClass('fechado')  
+        btnModal.abrir.removeClass('fechado')      
+    })
+})
